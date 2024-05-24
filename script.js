@@ -89,25 +89,25 @@ function renderCareerCards() {
   conhecaProfissaoLinks.classList.add('conheca-profissao-links');
 
   const link1 = document.createElement('a');
-  link1.href = 'pagina1.html';
+  link1.href = './pagina1.html';
   link1.classList.add('conheca-profissao-link');
   link1.textContent = 'Link 1';
   conhecaProfissaoLinks.appendChild(link1);
 
   const link2 = document.createElement('a');
-  link2.href = 'pagina2.html';
+  link2.href = './pagina2.html';
   link2.classList.add('conheca-profissao-link');
   link2.textContent = 'Link 2';
   conhecaProfissaoLinks.appendChild(link2);
 
   const link3 = document.createElement('a');
-  link3.href = 'pagina3.html';
+  link3.href = './pagina3.html';
   link3.classList.add('conheca-profissao-link');
   link3.textContent = 'Link 3';
   conhecaProfissaoLinks.appendChild(link3);
 
   const link4 = document.createElement('a');
-  link4.href = 'pagina4.html';
+  link4.href = './pagina4.html';
   link4.classList.add('conheca-profissao-link');
   link4.textContent = 'Link 4';
   conhecaProfissaoLinks.appendChild(link4);
