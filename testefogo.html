@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Carreiras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            margin: 20px;
+        }
+        .search-bar, .filter-bar {
+            margin-bottom: 20px;
+        }
+        .career-cards {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .career-card {
+            width: calc(33.333% - 10px);
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explorar Carreiras</h1>
+    </header>
+    <main>
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar carreiras">
+            <button id="search-button">Buscar</button>
+        </section>
+        <section class="filter-bar">
+            <label for="knowledge-area">Área de conhecimento:</label>
+            <select id="knowledge-area">
+                <option value="">Selecione uma área</option>
+                <option value="technology">Tecnologia da informação</option>
+                <option value="health">Saúde</option>
+                <option value="communication">Comunicação</option>
+                <option value="law">Direito</option>
+            </select>
+        </section>
+        <section class="career-cards" id="career-cards-container">
+            <div class="career-card">
+                <h3>Desenvolvedor de Software</h3>
+                <p>Demanda: Alta</p>
+                <p>Salário: R$ 5.000,00 - R$ 20.000,00</p>
+                <p>Habilidades: Domínio de Linguagens de Programação, Lógica, Resolução de Problemas, Trabalho em Equipe</p>
+                <button><a href="pagina1.html" target="_blank">Conheça a Profissão</a></button>
+            </div>
+            <div class="career-card">
+                <h3>Relações Públicas</h3>
+                <p>Demanda: Média</p>
+                <p>Salário: R$ 3.000,00 - R$ 8.000,00</p>
+                <p>Habilidades: Comunicação, Redação, Trabalho em Equipe, Organização</p>
+                <button><a href="pagina2.html" target="_blank">Conheça a Profissão</a></button>
+            </div>
+            <div class="career-card">
+                <h3>Nutricionista</h3>
+                <p>Demanda: Alta</p>
+                <p>Salário: R$ 4.000,00 - R$ 12.000,00</p>
+                <p>Habilidades: Conhecimento em Nutrição, Alimentação, Saúde, Trabalho em Equipe</p>
+                <button><a href="pagina3.html" target="_blank">Conheça a Profissão</a></button>
+            </div>
+            <div class="career-card">
+                <h3>Advogado</h3>
+                <p>Demanda: Alta</p>
+                <p>Salário: R$ 6.000,00 - R$ 20.000,00</p>
+                <p>Habilidades: Conhecimento em Direito, Redação, Análise, Trabalho em Equipe</p>
+                <button><a href="pagina4.html" target="_blank">Conheça a Profissão</a></button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
