@@ -1,0 +1,112 @@
+<!-- perfil.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"] {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.back-to-main {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+}
+
+.back-to-main:hover {
+    background-color: #0056B3;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" value="" disabled>
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" value="" disabled>
+        <label for="sexo">Sexo:</label>
+        <input type="text" id="sexo" name="sexo" value="" disabled>
+        <label for="gmail">Gmail:</label>
+        <input type="text" id="gmail" name="gmail" value="" disabled>
+        <label for="senha">Senha:</label>
+<div class="password-container">
+    <input type="password" id="senha" name="senha" required>
+    <i id="toggle-icon" class="password-toggle" onclick="togglePasswordVisibility()">◯</i>
+</div>
+    <br>
+    <a href="página_principal.html" class="back-to-main">Voltar para a página principal</a>
+</br> 
+    </form>
+    <script>
+        // Get user information from local storage
+        const name = localStorage.getItem("name");
+        const birthdate = localStorage.getItem("birthdate");
+        const gender = localStorage.getItem("gender");
+        const email = localStorage.getItem("email");
+        const password = localStorage.getItem("password");
+
+        // Display user information on the page
+        document.getElementById("nomeCompleto").value = name;
+        document.getElementById("dataNascimento").value = birthdate;
+        document.getElementById("sexo").value = gender;
+        document.getElementById("gmail").value = email;
+        document.getElementById("senha").value = password;
+
+        // Function to toggle password visibility
+        function togglePasswordVisibility() {
+    const passwordInput = document.getElementById("senha");
+    const toggleIcon = document.getElementById("toggle-icon");
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleIcon.textContent = "⦿";
+    } else {
+        passwordInput.type = "password";
+        toggleIcon.textContent = "◯";
+    }
+}
+    </script>
+    
+</body>
+</html>

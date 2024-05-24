@@ -1,0 +1,100 @@
+/* Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #333;
+    --background-color: #f5f5f5;
+    --font-family: Arial, sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.filter-bar label {
+    margin-right: 1rem;
+}
+
+.filter-bar select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.career-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.career-card:hover {
+    background-color: var(--background-color);
+}
+
+.career-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.career-card h3 {
+    margin: 0;
+}
+
+.career-card p {
+    margin: 0;
+    color: #666;
+}
