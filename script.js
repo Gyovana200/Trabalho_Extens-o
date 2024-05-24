@@ -64,7 +64,6 @@ function renderCareerCards() {
   
       const careerButton = document.createElement('button');
       careerButton.textContent = 'Conheça a Profissão';
-      careerButton.addEventListener('click', () => {
   
       careerCard.appendChild(careerName);
       careerCard.appendChild(careerDemand);
